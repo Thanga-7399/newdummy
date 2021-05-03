@@ -37,7 +37,7 @@
 				        <username>Thanga_7399</username>
 				        <password>Past@157007</password>
 				        <environment>Sandbox</environment>
-				        <muleversion>4.3.0</muleversion>
+				        <muleVersion>4.3.0</muleVersion>
 				        <workers>1</workers>
 				        <workerType>Micro</workerType>
 				        <applicationName>newdummy-project-Thanga</applicationName>
