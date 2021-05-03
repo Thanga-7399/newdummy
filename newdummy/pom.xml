@@ -60,7 +60,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <runtimeversion>4.3.0-20210304</runtimeversion>
+                    <runtimeVersion>4.3.0-20210304</runtimeVersion>
                     <coverage>
                         <runCoverage>true</runCoverage>
                         <formats>
