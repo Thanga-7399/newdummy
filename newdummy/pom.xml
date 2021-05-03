@@ -33,8 +33,43 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				    <cloudHubDeployment>
+				        <uri>https://anypoint.mulesoft.com</uri>
+				        <username>Thanga_7399</username>
+				        <password>Past@157007</password>
+				        <environment>Sandbox</environment>
+				        <muleversion>4.3.0</muleversion>
+				        <workers>1</workers>
+				        <workerType>Micro</workerType>
+				        <applicationName>newdummy-project-Thanga</applicationName>
+				        <objectStoreV2>true</objectStoreV2>
+				    </cloudHubDeployment>
 				</configuration>
 			</plugin>
+        <plugin>
+                <groupId>com.mulesoft.munit.tools</groupId>
+                <artifactId>munit-maven-plugin</artifactId>
+                <version>${munit.version}</version>
+                <executions>
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                            <goal>coverage-report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <runtimeversion>4.3.0-20210304</runtimeversion>
+                    <coverage>
+                        <runCoverage>true</runCoverage>
+                        <formats>
+                            <format>html</format>
+                        </formats>
+                    </coverage>
+                </configuration>
+            </plugin>
         </plugins>
 	</build>
 
